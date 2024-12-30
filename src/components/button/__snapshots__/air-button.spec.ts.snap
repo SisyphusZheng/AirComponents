@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`air-button should render button with content in the slot 1`] = `
+<air-button>
+  <template shadowrootmode="open">
+    <button aria-label="Button" class="native-button size-medium variant-default" title="Button" style="--button-color: blue;">
+      <slot></slot>
+    </button>
+  </template>
+  <span>
+    Click me
+  </span>
+</air-button>
+`;
+
+exports[`air-button should render correctly with loading state 1`] = `
+<air-button loading="">
+  <template shadowrootmode="open">
+    <button aria-busy="true" aria-label="Button" class="loading native-button size-medium variant-default" title="Button" style="--button-color: blue;">
+      <span class="air-button__loading-icon">
+        🔄
+      </span>
+      <slot></slot>
+    </button>
+  </template>
+</air-button>
+`;
